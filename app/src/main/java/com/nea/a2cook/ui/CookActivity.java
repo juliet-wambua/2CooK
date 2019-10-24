@@ -35,8 +35,8 @@ public class CookActivity extends AppCompatActivity {
         mListView.setOnItemClickListener ( new AdapterView.OnItemClickListener () {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                String emojis = ((TextView)view).getText().toString();
-                Toast.makeText(CookActivity.this, emojis, Toast.LENGTH_LONG).show();
+                String meals = ((TextView)view).getText().toString();
+                Toast.makeText(CookActivity.this, meals, Toast.LENGTH_LONG).show();
             }
         });
         Intent intent = getIntent();
