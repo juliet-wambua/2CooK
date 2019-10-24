@@ -1,14 +1,14 @@
-package com.nea.a2cook;
+package com.nea.a2cook.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class CreateAccountActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate ( savedInstanceState );
-        setContentView ( R.layout.activity_create_account );
+        setContentView ( R.layout.activity_login );
     }
 }
