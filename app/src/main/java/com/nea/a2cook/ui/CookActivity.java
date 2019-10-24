@@ -16,10 +16,8 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class CookActivity extends AppCompatActivity {
-    @BindView( R.id.mealsTextView)
-    TextView mEmojiTextView;
-    @BindView ( R.id.listView )
-    ListView mListView;
+    @BindView( R.id.mealsTextView) TextView mMealTextView;
+    @BindView ( R.id.listView ) ListView mListView;
     private String[] meals = new String[] {"Smiley", "Wink", "Wink with tongue out", "Love eyes", "Hi5 hand", "Love eyes wink"};
     private String[] price = new String[] {"Express the the smiling effect", "Crushing effect best emoji", "Express love especially when you fall in love", "A simple salutation hi5", "Expess that in love happy kafeeling"};
 
@@ -29,7 +27,7 @@ public class CookActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cook);
         ButterKnife.bind ( this );
 
-        MyMealsArrayAdapter adapter = new MyMealsArrayAdapter(this, android.R.layout.simple_list_item_1, meals,price); // must match constructor!
+        MyMealsArrayAdapter adapter = new MyMealsArrayAdapter(this, android.R.layout.simple_list_item_1,meals, price); // must match constructor!
         mListView.setAdapter ( adapter );
 
         mListView.setOnItemClickListener ( new AdapterView.OnItemClickListener () {
@@ -40,7 +38,7 @@ public class CookActivity extends AppCompatActivity {
             }
         });
         Intent intent = getIntent();
-        String emojis = intent.getStringExtra("meals");
-        mEmojiTextView.setText("Here is results on : " + meals);
+        String meals = intent.getStringExtra("meals");
+        mMealTextView.setText("Here is results on : " + meals);
     }
 }
