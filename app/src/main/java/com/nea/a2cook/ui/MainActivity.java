@@ -10,7 +10,10 @@ import android.widget.EditText;
 
 import com.nea.a2cook.R;
 
-public class MainActivity extends AppCompatActivity {
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     @BindView(R.id.findMealsButton)
     Button mFindMealsButton;
     @BindView(R.id.mealsTextView)
@@ -28,11 +31,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onClick(View v) {
         if (v == mFindMealsButton) {
-            String mealpics = mMealsTextView.getText ().toString ();
+            String meals = mMealsTextView.getText ().toString ();
             Intent intent = new Intent ( MainActivity.this, CookActivity.class );
-            intent.putExtra ( "mealpics", mealpics );
+            intent.putExtra ( "meals", meals );
             startActivity ( intent );
         }
     }
 
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+
+    }
 }

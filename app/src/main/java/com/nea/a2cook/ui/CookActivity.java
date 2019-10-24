@@ -11,6 +11,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.nea.a2cook.R;
+import com.nea.a2cook.adapters.MyMealsArrayAdapter;
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class CookActivity extends AppCompatActivity {
     @BindView( R.id.mealsTextView)

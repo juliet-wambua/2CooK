@@ -21,27 +21,27 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="35dp"
         android:textColor="@color/colorTextIcons"
-        android:text="Emojis" />
+        android:text="Meals" />
 
     <Button
-        android:id="@+id/findEmojisButton"
+        android:id="@+id/findMealsButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:background="@color/colorPrimaryText"
-        android:text="Find Emojis Meaning"
+        android:text="Find Meals Prices"
         android:textColor="@color/colorPrimary" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/emojisTextView"
+        android:id="@+id/mealsTextView"
         android:background="@color/colorPrimary"
-        android:layout_above="@+id/findEmojisButton"
+        android:layout_above="@+id/findMealsButton"
         android:layout_marginBottom="10dp"
         android:padding="5dp"
-        android:hint="Enter Name of EMoji!"
+        android:hint="Enter Name of Meal!"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
