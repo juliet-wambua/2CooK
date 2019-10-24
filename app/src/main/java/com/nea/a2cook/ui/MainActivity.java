@@ -1,4 +1,4 @@
-package com.nea.a2cook;
+package com.nea.a2cook.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.nea.a2cook.R;
 
 public class MainActivity extends AppCompatActivity {
     @BindView(R.id.findMealsButton)
@@ -27,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     public void onClick(View v) {
         if (v == mFindMealsButton) {
             String mealpics = mMealsTextView.getText ().toString ();
-            Intent intent = new Intent ( MainActivity.this,CookActivity.class );
+            Intent intent = new Intent ( MainActivity.this, CookActivity.class );
             intent.putExtra ( "mealpics", mealpics );
             startActivity ( intent );
         }
