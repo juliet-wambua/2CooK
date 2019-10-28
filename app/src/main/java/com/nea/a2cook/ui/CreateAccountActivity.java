@@ -1,4 +1,4 @@
-package com.nea.a2cook;
+package com.nea.a2cook.ui;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,7 +13,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.nea.a2cook.ui.MainActivity;
+import com.nea.a2cook.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
