@@ -32,12 +32,6 @@ Clone this repository and import into **Android Studio**
 ```bash
 git clone https://github.com/juliet-wambua/2Cook.git
 ```
-
-## Maintainers
-This project is mantained by:
-* [Arnold Oduma](https://arnoldoduma.github.io/portfolio/)
-
-
 ### -*Initial works*-
 
   - [Github Search](https://github.com/ArnoldOduma/git-search) - An app to search github users and their repositories
