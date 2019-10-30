@@ -30,7 +30,7 @@ $ gradle --version     //gradle version
 ## Installation
 Clone this repository and import into **Android Studio**
 ```bash
-git clone https://github.com/ArnoldOduma/Cook-It.git
+git clone https://github.com/juliet-wambua/2Cook.git
 ```
 
 ## Generating APK
