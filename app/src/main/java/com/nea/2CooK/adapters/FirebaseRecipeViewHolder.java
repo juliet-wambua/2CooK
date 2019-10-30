@@ -1,4 +1,4 @@
-package com.techspaceke.cookit.adapters;
+package com.nea.2CooK.adapters;
 
 import android.content.Context;
 import android.view.View;

@@ -1,4 +1,4 @@
-package com.techspaceke.cookit.ui;
+package com.nea.a2cook.ui.
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -38,9 +38,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     private int shortAnimationDuration;
     private int longAnimationDuration;
 
-//    @BindView(R.id.accountLogin_SignUpTextView)TextView haveAccountTextview;
     @BindView(R.id.errorTextView) TextView mErrorTextView;
-//    @BindView(R.id.signUpButtonTextView) TextView mSignUpButtonTextView;
     @BindView(R.id.accountLogin_SignUpTextView) TextView mAccountLogin_SignUpTextView;
     @BindView(R.id.signUpButtonTextView) TextView mSignUpButtonTextView;
     @BindView(R.id.emailEditText) EditText mEmailEditText;
@@ -52,7 +50,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     @BindView(R.id.linearLayout) LinearLayout mLinearLayout;
     @BindView(R.id.logInFragmentContainer) LinearLayout mLogInFragmentContainer;
 
-    Fragment fragmentLogIn = new LogInFragment();
+    Fragment fragmentLogIn = new com.techspaceke.cookit.ui.LogInFragment ();
     FragmentManager fm = getSupportFragmentManager();
 
     TextView b;
@@ -203,7 +201,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
              Toast.makeText(SignUpActivity.this,
                                     "user already logged in " + user.getEmail(),
                                     Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
+            Intent intent = new Intent(SignUpActivity.this, com.techspaceke.cookit.ui.MainActivity.class);
             startActivity(intent);
         }else {
              Log.e(TAG,"COULD NOT AUTHENTICATE !!!!!!!!");

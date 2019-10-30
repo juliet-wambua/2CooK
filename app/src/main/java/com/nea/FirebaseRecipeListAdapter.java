@@ -1,4 +1,4 @@
-package com.techspaceke.cookit.adapters;
+package com.nea.2CooK.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -16,7 +16,7 @@ import com.techspaceke.cookit.models.Recipes;
 import com.techspaceke.cookit.util.ItemTouchHelperAdapter;
 import com.techspaceke.cookit.util.OnStartDragListener;
 
-public class FirebaseRecipeListAdapter extends FirebaseRecyclerAdapter<Recipes, FirebaseRecipeViewHolder> implements ItemTouchHelperAdapter {
+public class FirebaseRecipeListAdapter extends FirebaseRecyclerAdapter<Recipes, com.techspaceke.cookit.adapters.FirebaseRecipeViewHolder> implements ItemTouchHelperAdapter {
     private DatabaseReference mRef;
     private OnStartDragListener mOnStartDragListener;
     private Context mContext;
@@ -33,7 +33,7 @@ public class FirebaseRecipeListAdapter extends FirebaseRecyclerAdapter<Recipes, 
     }
 
     @Override
-    public void onBindViewHolder(@NonNull FirebaseRecipeViewHolder holder, int position, Recipes recipes) {
+    public void onBindViewHolder(@NonNull com.techspaceke.cookit.adapters.FirebaseRecipeViewHolder holder, int position, Recipes recipes) {
         holder.bindRecipe(recipes);
         holder.mRecipeImageView.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -48,9 +48,9 @@ public class FirebaseRecipeListAdapter extends FirebaseRecyclerAdapter<Recipes, 
 
     @NonNull
     @Override
-    public FirebaseRecipeViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public com.techspaceke.cookit.adapters.FirebaseRecipeViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recipe_list_item_drag, parent,false);
-        return new FirebaseRecipeViewHolder(view);
+        return new com.techspaceke.cookit.adapters.FirebaseRecipeViewHolder (view);
     }
 
 

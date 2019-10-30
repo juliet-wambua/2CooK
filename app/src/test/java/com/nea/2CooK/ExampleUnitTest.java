@@ -1,4 +1,4 @@
-package com.techspaceke.cookit;
+package com.nea.2CooK;
 
 import org.junit.Test;
 
