@@ -34,7 +34,7 @@ public class SplashScreenActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         animationDrawable.start();
-        checkAnimationStatus(150, animationDrawable);
+        checkAnimationStatus(200, animationDrawable);
     }
     /**
      * check the animation status recursively, keep the animation until it reach the last frame.
