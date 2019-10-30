@@ -1,47 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ic_launcher_foreground"
+
     tools:context=".ui.MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
+    <include layout="@layout/content_main" />
+    
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/foodbackground" />
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="0dp"
+        android:layout_marginHorizontal="9dp"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:elevation="4dp"/>
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="35dp"
-        android:textColor="@color/colorTextIcons"
-        android:text="Meals" />
 
-    <Button
-        android:id="@+id/findMealsButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:background="@color/colorPrimaryText"
-        android:text="Find Meals Prices"
-        android:textColor="@color/colorPrimary" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/mealsTextView"
-        android:background="@color/colorPrimary"
-        android:layout_above="@+id/findMealsButton"
-        android:layout_marginBottom="10dp"
-        android:padding="5dp"
-        android:hint="Enter Name of Meal!"
-        android:layout_centerHorizontal="true" />
-
-</RelativeLayout>
