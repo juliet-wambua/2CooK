@@ -1,9 +1,7 @@
 
-
-
 # 2Cook
 
-This is a recipe application that calls various recipes from an API and displays them in the application.
+2Cook is a simple android application that helps one to choose their favorite type of meat that is beef, chicken, pork or fish. fter selecting they get different types of how to prepare it then they can select the one they like and get recipes on how to prepare it themselves.
 
 ## Author
 
