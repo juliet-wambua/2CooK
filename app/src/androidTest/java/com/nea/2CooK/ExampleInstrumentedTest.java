@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.techspaceke.cookit", appContext.getPackageName());
+        assertEquals("com.nea.2CooK", appContext.getPackageName());
     }
 }
