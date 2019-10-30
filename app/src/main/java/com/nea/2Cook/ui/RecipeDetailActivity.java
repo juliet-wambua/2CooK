@@ -46,6 +46,7 @@ public class RecipeDetailActivity extends AppCompatActivity {
                                 .build()))
                 .build());
     }
+
     @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(ViewPumpContextWrapper.wrap(newBase));
