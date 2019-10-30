@@ -33,13 +33,6 @@ Clone this repository and import into **Android Studio**
 git clone https://github.com/juliet-wambua/2Cook.git
 ```
 
-## Generating APK
-From Android Studio go to:
-1. ***Build*** menu
-2. ***Generate APK***
-
-and go to the  ***build/output/apk***
-
 ## Maintainers
 This project is mantained by:
 * [Arnold Oduma](https://arnoldoduma.github.io/portfolio/)
