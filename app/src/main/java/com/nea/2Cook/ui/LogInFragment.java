@@ -47,7 +47,6 @@ public class LogInFragment extends Fragment implements View.OnClickListener{
     private static final String TAG = LogInFragment.class.getSimpleName() ;
 
     public LogInFragment() {
-        // Required empty public constructor
     }
 
 
@@ -60,7 +59,6 @@ public class LogInFragment extends Fragment implements View.OnClickListener{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_log_in, container, false);
         unbinder = ButterKnife.bind(this, view);
         hideProgressDialog();
@@ -132,7 +130,7 @@ public class LogInFragment extends Fragment implements View.OnClickListener{
         if (user != null){
             Log.e(TAG,"Congrats !!!!!" + user.getEmail().toUpperCase().charAt(0));
              Log.e(TAG, user.getUid());
-            Intent intent = new Intent(getActivity(), MainActivity.class);
+            Intent intent = new Intent(getActivity(), com.techspaceke.cookit.ui.MainActivity.class);
             startActivity(intent);
         }else {
              Log.e(TAG,"COULD NOT AUTHENTICATE !!!!!!!!");
