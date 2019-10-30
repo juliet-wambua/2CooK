@@ -1,13 +1,13 @@
 
 
 
-# Cook It -V 1.0.0
+# 2Cook
 
 This is a recipe application that calls various recipes from an API and displays them in the application.
 
 ## Author
 
-* **Arnold Oduma**
+* **Juliet Wambua**
 
 
 ### Prerequisites
