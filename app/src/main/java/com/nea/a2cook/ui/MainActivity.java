@@ -25,6 +25,7 @@ import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -246,7 +247,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void login(){
         Intent intent = new Intent(this,SignUpActivity.class);
-        startActivity(intent);
+        startActivity(new Intent ( this,  MainActivity.class));
+        Animatoo.animateZoom ( this );
     }
     public void logout(){
         FirebaseAuth.getInstance().signOut();
@@ -285,6 +287,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         intent.putExtra("meal", "pork");
         startActivity(intent);
     }
+    @Override
+    public void onBackPressed(){
+        super.onBackPressed ( );
+        Animatoo.animateSlideLeft ( this );
+    }
+
 
     @Override
     protected void onDestroy() {

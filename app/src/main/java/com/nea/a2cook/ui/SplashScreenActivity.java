@@ -8,24 +8,25 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.widget.ImageView;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.nea.a2cook.R;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
-    private static int SPLASH_TIME_OUT = 1500;
+    private static int SPLASH_TIME_OUT = 1200;
     private ImageView container;
     private AnimationDrawable animationDrawable;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash_screen);
+        setContentView( R.layout.activity_splash_screen);
         container = findViewById(R.id.iv_icons);
-        container.setBackgroundResource(R.drawable.splash_animation);
+        container.setBackgroundResource (R.drawable.splash_animation);
         animationDrawable = (AnimationDrawable) container.getBackground();
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(SplashScreenActivity.this, LogInFragment.class);
+                Intent i = new Intent(SplashScreenActivity.this, MainActivity.class);
                 startActivity(i);
                 finish();
             }
@@ -36,6 +37,11 @@ public class SplashScreenActivity extends AppCompatActivity {
         super.onResume();
         animationDrawable.start();
         checkAnimationStatus(150, animationDrawable);
+    }
+    @Override
+    public void onBackPressed(){
+        super.onBackPressed();
+        Animatoo.animateZoom (SplashScreenActivity.this); //fire the slide left animation
     }
     /**
      * check the animation status recursively, keep the animation until it reach the last frame.

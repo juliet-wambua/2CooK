@@ -11,16 +11,6 @@
     android:background="@color/translucentWhite">
 
 
-
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/trans_bg"
-        android:adjustViewBounds="true"
-        android:layout_columnSpan="2"
-        android:layout_columnWeight="1"/>
-
     <ScrollView
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
@@ -41,7 +31,7 @@
                 android:id="@+id/logoImageView"
                 android:layout_width="50sp"
                 android:layout_height="200sp"
-                app:srcCompat="@drawable/lg1"
+                app:srcCompat="@drawable/foodbackground"
                 android:adjustViewBounds="true"
                 android:layout_columnSpan="2"
                 android:layout_columnWeight="1"
@@ -52,7 +42,7 @@
                 android:id="@+id/desc"
                 android:layout_width="50sp"
                 android:layout_height="wrap_content"
-                android:text="Get up to 300,000 recipes to choose from."
+                android:text="@string/click_on_one"
                 android:textSize="30sp"
                 android:textColor="@color/primaryColor"
                 android:paddingHorizontal="10sp"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pasta_bg"
+    android:background="@drawable/foodbackground"
     android:padding="7dp"
     tools:context=".ui.SignUpActivity">
 
@@ -30,7 +30,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Cook It"
+                android:text="2CooK"
                 android:textColor="@color/primaryColor"
                 android:textSize="40sp"
                 app:layout_constraintEnd_toEndOf="parent"
