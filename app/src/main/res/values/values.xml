@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">155924195377-25scoh3re3lq50tmb4pkg78mmr9lof3k.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://recipe-62232.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">155924195377</string>
+    <string name="google_api_key" translatable="false">AIzaSyAi7vtFhAh_GEO7pHJKb2Uw_yah1QfMLX0</string>
+    <string name="google_app_id" translatable="false">1:155924195377:android:4d0a5ca4a5d6f95b</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAi7vtFhAh_GEO7pHJKb2Uw_yah1QfMLX0</string>
+    <string name="google_storage_bucket" translatable="false">recipe-62232.appspot.com</string>
+    <string name="project_id" translatable="false">recipe-62232</string>
+</resources>

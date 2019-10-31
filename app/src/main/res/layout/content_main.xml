@@ -8,7 +8,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".ui.MainActivity"
     tools:showIn="@layout/activity_main"
-    android:background="@color/gray">
+    android:background="@color/translucentWhite">
 
 
 
@@ -30,170 +30,116 @@
 
 
 
-    <GridLayout
-        android:id="@+id/grid2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:columnCount="2">
-
-        <!--<ImageView-->
-            <!--android:layout_width="50sp"-->
-            <!--android:layout_height="250sp"-->
-            <!--android:src="@drawable/beef"-->
-            <!--android:adjustViewBounds="true"-->
-            <!--android:scaleType="centerCrop"-->
-            <!--android:layout_columnSpan="2"-->
-            <!--android:layout_columnWeight="1"-->
-            <!--android:layout_gravity="fill"/>-->
-
-
-        <ImageView
-            android:id="@+id/logoImageView"
-            android:layout_width="50sp"
-            android:layout_height="200sp"
-            app:srcCompat="@drawable/lg1"
-            android:adjustViewBounds="true"
-            android:layout_columnSpan="2"
-            android:layout_columnWeight="1"
-            android:layout_gravity="fill"
-            android:layout_marginTop="90sp"/>
-
-        <TextView
-            android:id="@+id/desc"
-            android:layout_width="50sp"
+        <GridLayout
+            android:id="@+id/grid2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Get up to 300,000 recipes to choose from."
-            android:textSize="30sp"
-            android:textColor="@color/primaryColor"
-            android:paddingHorizontal="10sp"
-            android:layout_columnSpan="2"
-            android:layout_columnWeight="1"
-            android:layout_marginTop="30sp"
-            android:layout_gravity="fill"
-            android:background="@color/gray"/>
+            android:columnCount="2">
 
-        <TextView
-            android:layout_width="50sp"
-            android:layout_height="wrap_content"
-            android:layout_columnSpan="2"
-            android:layout_columnWeight="1"
-            android:layout_gravity="fill"
-            android:text="Porpular picks"
-            android:textSize="20sp"
-            android:textColor="@color/primaryColor"
-            android:paddingTop="30sp"
-            android:paddingHorizontal="10sp"
-            android:background="@color/gray"/>
 
-        <ProgressBar
-            android:id="@+id/httpProgressBar"
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="50sp"
-            android:layout_height="wrap_content"
-            android:indeterminate="true"
-            android:max="100"
-            android:layout_columnSpan="2"
-            android:layout_columnWeight="1"
-            android:backgroundTint="@color/secondaryTextColor"
-            android:indeterminateTint="@color/primaryColor"
-            android:layout_gravity="fill"
-            />
-        <ImageButton
-            android:id="@+id/beef"
-            android:layout_width="50sp"
-            android:layout_height="90sp"
-            android:src="@drawable/beef"
-            android:scaleType="centerCrop"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_margin="10dp"
-            android:layout_gravity="fill"
-            android:tooltipText="Hello"
-            android:onClick="beef"/>
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="50sp"
+                android:layout_height="200sp"
+                app:srcCompat="@drawable/lg1"
+                android:adjustViewBounds="true"
+                android:layout_columnSpan="2"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_marginTop="90sp"/>
 
-        <ImageButton
-            android:id="@+id/chickenImageButton"
-            android:layout_width="50sp"
-            android:layout_height="90sp"
-            android:src="@drawable/ch"
-            android:scaleType="centerCrop"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_margin="10dp"
-            android:layout_gravity="fill"
-            android:onClick="chicken"
-            android:transitionName="mealTransition"/>
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:text="Get up to 300,000 recipes to choose from."
+                android:textSize="30sp"
+                android:textColor="@color/primaryColor"
+                android:paddingHorizontal="10sp"
+                android:layout_columnSpan="2"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="30sp"
+                android:layout_gravity="fill"
+                android:background="@color/gray"/>
 
-        <ImageButton
-            android:id="@+id/fishImageButton"
-            android:layout_width="50sp"
-            android:layout_height="90sp"
-            android:src="@drawable/fish"
-            android:scaleType="centerCrop"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_margin="10dp"
-            android:layout_gravity="fill"
-            android:onClick="fish"/>
+            <TextView
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="2"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:text="Porpular picks"
+                android:textSize="20sp"
+                android:textColor="@color/primaryColor"
+                android:paddingTop="30sp"
+                android:paddingHorizontal="10sp"
+                android:background="@color/gray"/>
 
-        <ImageButton
-            android:id="@+id/porkImageButton"
-            android:layout_width="50sp"
-            android:layout_height="90sp"
-            android:src="@drawable/pork"
-            android:scaleType="centerCrop"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_margin="10dp"
-            android:layout_gravity="fill"
-            android:onClick="pork"/>
+            <ProgressBar
+                android:id="@+id/httpProgressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:max="100"
+                android:layout_columnSpan="2"
+                android:layout_columnWeight="1"
+                android:backgroundTint="@color/secondaryTextColor"
+                android:indeterminateTint="@color/primaryColor"
+                android:layout_gravity="fill"
+                />
+            <ImageButton
+                android:id="@+id/beef"
+                android:layout_width="50sp"
+                android:layout_height="90sp"
+                android:src="@drawable/beef"
+                android:scaleType="centerCrop"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="10dp"
+                android:layout_gravity="fill"
+                android:tooltipText="Hello"
+                android:onClick="beef"/>
+
+            <ImageButton
+                android:id="@+id/chickenImageButton"
+                android:layout_width="50sp"
+                android:layout_height="90sp"
+                android:src="@drawable/sushi"
+                android:scaleType="centerCrop"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="10dp"
+                android:layout_gravity="fill"
+                android:onClick="chicken"
+                android:transitionName="mealTransition"/>
+
+            <ImageButton
+                android:id="@+id/fishImageButton"
+                android:layout_width="50sp"
+                android:layout_height="90sp"
+                android:src="@drawable/fish"
+                android:scaleType="centerCrop"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="10dp"
+                android:layout_gravity="fill"
+                android:onClick="fish"/>
+
+            <ImageButton
+                android:id="@+id/porkImageButton"
+                android:layout_width="50sp"
+                android:layout_height="90sp"
+                android:src="@drawable/pork"
+                android:scaleType="centerCrop"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="10dp"
+                android:layout_gravity="fill"
+                android:onClick="pork"/>
 
         </GridLayout>
     </ScrollView>
-
-    <!--<GridLayout-->
-        <!--android:id="@+id/grid1"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_alignParentTop="true"-->
-        <!--android:layout_alignParentStart="true"-->
-        <!--android:layout_alignParentEnd="true"-->
-        <!--android:layout_marginTop="50dp"-->
-        <!--android:layout_marginHorizontal="10dp"-->
-        <!--android:padding="2dp"-->
-        <!--android:elevation="4dp"-->
-        <!--android:orientation="horizontal"-->
-        <!--android:background="@drawable/rectangle">-->
-
-        <!--<EditText-->
-            <!--android:id="@+id/searchEditText"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_row="0"-->
-            <!--android:layout_column="0"-->
-            <!--android:layout_gravity="fill_horizontal"-->
-            <!--android:layout_marginTop="9dp"-->
-            <!--android:layout_marginStart="15dp"-->
-            <!--android:textSize="16dp"-->
-            <!--android:hint="@string/search_edit_text"-->
-            <!--android:textColorHint="@color/primaryColor"-->
-            <!--android:lineHeight="0.3dp"-->
-            <!--android:textColor="@color/primaryTextColor"-->
-            <!--android:background="@null"-->
-            <!--android:imeOptions="actionDone" />-->
-
-        <!--<ImageButton-->
-            <!--android:id="@+id/search_button"-->
-            <!--android:layout_width="50dp"-->
-            <!--android:layout_height="40dp"-->
-            <!--android:src="@drawable/ic_search_black_24dp"-->
-            <!--android:scaleType="centerInside"-->
-            <!--android:padding="5dp"-->
-            <!--android:layout_marginTop="1dp"-->
-            <!--android:background="#00000000"-->
-            <!--android:layout_row="0"-->
-            <!--android:layout_column="1"/>-->
-    <!--</GridLayout>-->
 
     <ImageView
         android:id="@+id/favouritesImageViewBtn"

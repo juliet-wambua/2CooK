@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RecipeActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="9dp"
+        android:background="@drawable/rectangle"
+        android:elevation="4dp"
+        app:layout_scrollFlags="scroll|enterAlways"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginBottom="340dp"
+        android:foregroundGravity="center"
+        android:translationZ="10dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:background="@color/secondaryTextColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="66dp"
+        android:paddingHorizontal="5dp"
+        android:transitionName="mealTransition"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/recipeKeyedResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:text="Recipes"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"/>
+
+
+
+</RelativeLayout>
