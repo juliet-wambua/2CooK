@@ -37,4 +37,6 @@
     <string name="have_account">Already have an account ? Log In</string>
     <string name="get_up_to_300_000_recipes_to_choose_from">Get up to 300,000 recipes to choose from.</string>
     <string name="click_on_one">Click on One</string>
+    <string name="log_in">Log In</string>
+    <string name="email">Email</string>
 </resources>

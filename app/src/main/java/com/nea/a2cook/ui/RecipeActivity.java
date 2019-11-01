@@ -80,11 +80,7 @@ public class RecipeActivity extends AppCompatActivity {
         String meal = intent.getStringExtra("meal");
         mRecipeKeyedResult.setText("Results for " + meal);
         getRecipes(meal);
-//
-//        Typeface scope = Typeface.createFromAsset(getAssets(),"fonts/scope.ttf");
-//        mRecipeKeyedResult.setTypeface(scope);
 
-        //import font
         ViewPump.init(ViewPump.builder()
                 .addInterceptor(new CalligraphyInterceptor(
                         new CalligraphyConfig.Builder()
