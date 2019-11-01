@@ -1,7 +1,7 @@
 # 2CooK
 This is a mobile that helps chefs and people who like cooking to be able to just search for a meal they would like to prepare then get instructions on how to proceed.
 ## Setup
-    Clone this repository and import into Android Studio. Git clone [this link](https://github.com/juliet-wambua/2CooK).
+    Clone this repository and import into Android Studio. Git clone [this link](https://github.com/juliet-wambua/2CooK.git.
 
 
 ## Contributions
